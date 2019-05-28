@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerriDataServices", "TerriDataServices\TerriDataServices.csproj", "{0C75A85C-74EE-4B0A-B73C-6A8CBB0776A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerriDataServices.Tests", "TerriDataServices.Tests\TerriDataServices.Tests.csproj", "{33CBCD47-81A8-438D-9FBE-F60B3854D363}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C75A85C-74EE-4B0A-B73C-6A8CBB0776A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C75A85C-74EE-4B0A-B73C-6A8CBB0776A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C75A85C-74EE-4B0A-B73C-6A8CBB0776A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C75A85C-74EE-4B0A-B73C-6A8CBB0776A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CBCD47-81A8-438D-9FBE-F60B3854D363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CBCD47-81A8-438D-9FBE-F60B3854D363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CBCD47-81A8-438D-9FBE-F60B3854D363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CBCD47-81A8-438D-9FBE-F60B3854D363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA19DD47-9BDE-418B-9D24-B0510DB13EE3}
+	EndGlobalSection
+EndGlobal
