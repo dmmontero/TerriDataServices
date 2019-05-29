@@ -23,7 +23,7 @@
             try
             {
                 respuesta = UpraHelper.ObtenerFronteraAgricola();
-                if (respuesta.Count == 0)
+                if (respuesta == null || respuesta.Count == 0)
                     return NotFound();
             }
             catch (Exception ex)
