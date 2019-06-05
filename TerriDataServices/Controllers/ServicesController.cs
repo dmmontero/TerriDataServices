@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Threading.Tasks;
     using System.Web.Http;
     using TerriDataServices.Helpers;
     using TerriDataServices.Models.Dto;
@@ -34,5 +35,71 @@
 
             return Ok(respuesta);
         }
+
+        /// <summary>
+        /// Obtiene la información (de manera asincrona) de frontera agricola agrupada por Departamento.
+        /// Esta informacion se obtiene del servicio Rest publicado en https://geoservicios.upra.gov.co/arcgis/rest/services/ordenamiento_productivo
+        /// </summary>
+        /// <returns>Retrona una coleccion con la infromación de Hectáreas de frontera Agrícola por Departamento</returns>
+        [HttpGet]
+        [ActionName("FronteraAgricolaAsync")]
+        public async Task<IHttpActionResult> GetFronteraAgricolaAsync()
+        {
+            IList<FronteraAgricolaDto> respuesta = new List<FronteraAgricolaDto>();
+            try
+            {
+                respuesta = await Task.Run(() => UpraHelper.ObtenerFronteraAgricola());
+
+                if (respuesta == null || respuesta.Count == 0)
+                    return NotFound();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok(respuesta);
+        }
+
+        /// <summary>
+        /// Obtiene informacion de Áreas potenciales para Adecuación de Tierras con fines de irrigación
+        /// Esta información se obtiene del servicio Rest publicado en https://geoservicios.upra.gov.co/arcgis/rest/services/adecuacion_tierras_rurales/apadt_irrigacion_2018/MapServer/0
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [ActionName("HectareasAdecuadasIrrigacion")]
+        public IHttpActionResult GetHectareasAdecuadasIrrigacion()
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return Ok();
+        }
+
+        /// <summary>
+        /// Áreas potenciales para Adecuación de Tierras con fines de irrigación
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [ActionName("HectareasNoAdecuadasIrrigacion")]
+        public IHttpActionResult GetHectareasNoAdecuadasIrrigacion()
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return Ok();
+        }
+
     }
 }
