@@ -12,9 +12,10 @@
     public class ServicesController : ApiController
     {
         /// <summary>
-        /// The GetFronteraAgricola
+        /// Obtiene la información de frontera agricola agrupada por Departamento.
+        /// Esta informacion se obtiene del servicio Rest publicado en https://geoservicios.upra.gov.co/arcgis/rest/services/ordenamiento_productivo
         /// </summary>
-        /// <returns>The <see cref="IHttpActionResult"/></returns>
+        /// <returns>The <see cref="IHttpActionResult"/>Retrona una coleccion con la infromación de Hectáreas de frontera Agrícola por Departamento</returns>
         [HttpGet]
         [ActionName("FronteraAgricola")]
         public IHttpActionResult GetFronteraAgricola()

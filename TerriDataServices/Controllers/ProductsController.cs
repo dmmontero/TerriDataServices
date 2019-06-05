@@ -3,11 +3,13 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.Http;
+    using System.Web.Http.Description;
     using TerriDataServices.Models;
 
     /// <summary>
     /// Defines the <see cref="ProductsController" />
     /// </summary>
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class ProductsController : ApiController
     {
         /// <summary>

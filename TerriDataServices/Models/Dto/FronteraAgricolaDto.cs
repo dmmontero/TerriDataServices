@@ -2,21 +2,22 @@
 {
     /// <summary>
     /// Defines the <see cref="FronteraAgricolaDto" />
+    /// Estructura que contiene la información de FDrontera Agrícola por Departamento
     /// </summary>
     public class FronteraAgricolaDto
     {
         /// <summary>
-        /// Gets or sets the CodDepartamento
+        /// Código del Departamento
         /// </summary>
         public string CodDepartamento { get; set; }
 
         /// <summary>
-        /// Gets or sets the Departamento
+        /// Nombre del Departamento
         /// </summary>
         public string Departamento { get; set; }
 
         /// <summary>
-        /// Gets or sets the Area
+        /// Area de fontera agricola (Miles de Hectáreas)
         /// </summary>
         public double Area { get; set; }
     }

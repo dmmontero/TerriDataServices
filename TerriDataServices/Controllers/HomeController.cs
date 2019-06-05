@@ -1,8 +1,10 @@
 ﻿using System.Web.Http;
-using System.Web.Http.Results;
+using System.Web.Http.Description;
 
 namespace TerriDataServices.Controllers
 {
+
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class HomeController : ApiController
     {
         [HttpGet]

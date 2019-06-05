@@ -26,10 +26,18 @@
 
             //Tipo de ruteo
             config.Routes.MapHttpRoute(
-                name: "TerriDataApi",
+                name: "Home",
                 routeTemplate: "api/{controller}/{action}/{id}",
-                defaults: new { action = RouteParameter.Optional, id = RouteParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = RouteParameter.Optional }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "Default",
+                routeTemplate: "api/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = RouteParameter.Optional, id = RouteParameter.Optional }
+            );
+
+
         }
     }
 }
