@@ -143,7 +143,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>15168</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/TerriDataServicesDev</IISUrl>
+          <IISUrl>http://localhost/TerriDataServices</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/TerriDataServices</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
