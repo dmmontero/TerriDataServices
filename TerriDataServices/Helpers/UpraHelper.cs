@@ -6,8 +6,16 @@ using TerriDataServices.Models.Dto;
 
 namespace TerriDataServices.Helpers
 {
+    /// <summary>
+    /// Helper para accede a los servicios de la UPRA
+    /// alojados en https://geoservicios.upra.gov.co/arcgis/rest/services
+    /// </summary>
     public static class UpraHelper
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static IList<FronteraAgricolaDto> ObtenerFronteraAgricola()
         {
             //Crear cliente
