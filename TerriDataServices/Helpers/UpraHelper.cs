@@ -1,9 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using TerriDataServices.Models.Dto;
 
 namespace TerriDataServices.Helpers
