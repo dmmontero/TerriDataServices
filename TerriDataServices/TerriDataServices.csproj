@@ -110,6 +110,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\UpraHelper.cs" />
+    <Compile Include="Models\Dto\APADTDto.cs" />
     <Compile Include="Models\Dto\AtributosDto.cs" />
     <Compile Include="Models\Dto\FronteraAgricolaDto.cs" />
     <Compile Include="Models\Product.cs" />

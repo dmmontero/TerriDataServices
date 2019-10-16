@@ -69,37 +69,19 @@
         [ActionName("HectareasAdecuadasIrrigacion")]
         public IHttpActionResult GetHectareasAdecuadasIrrigacion()
         {
+            IList<APADTDto> respuesta = new List<APADTDto>();
             try
             {
-
+                respuesta = UpraHelper.ObtenerAPADT();
+                if (respuesta == null || respuesta.Count == 0)
+                    return NotFound();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                return BadRequest(ex.Message);
             }
-            return Ok();
+
+            return Ok(respuesta);
         }
-
-        /// <summary>
-        /// Áreas potenciales para Adecuación de Tierras con fines de irrigación
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [ActionName("HectareasNoAdecuadasIrrigacion")]
-        public IHttpActionResult GetHectareasNoAdecuadasIrrigacion()
-        {
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            return Ok();
-        }
-
     }
 }

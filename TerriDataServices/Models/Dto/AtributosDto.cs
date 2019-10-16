@@ -16,6 +16,16 @@
         public string Departamento { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public string CodMunicipio { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Municipio { get; set; }
+
+        /// <summary>
         /// Gets or sets the AreaHa
         /// </summary>
         public double AreaHa { get; set; }

@@ -1,10 +1,14 @@
-﻿namespace TerriDataServices.Models.Dto
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace TerriDataServices.Models.Dto
 {
     /// <summary>
-    /// Defines the <see cref="FronteraAgricolaDto" />
-    /// Estructura que contiene la información de FDrontera Agrícola por Departamento
+    /// 
     /// </summary>
-    public class FronteraAgricolaDto
+    public class APADTDto
     {
         /// <summary>
         /// Código del Departamento
